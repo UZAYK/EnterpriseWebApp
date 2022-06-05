@@ -13,8 +13,8 @@ namespace EnterpriseWebApp.Controllers
         EnterpriseDB db = new EnterpriseDB();
         public ActionResult Index()
         {
-            var query = db.Categories.ToList();
-            return View(query);
+            //var query = db.Categories.ToList();
+            return View(/*query*/);
         }
     }
 }
