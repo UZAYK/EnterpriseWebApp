@@ -3275,15 +3275,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AboutU.cs" />
-    <Compile Include="Models\Admin.cs" />
-    <Compile Include="Models\Blog.cs" />
-    <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\Contact.cs" />
-    <Compile Include="Models\EnterpriseDB.cs" />
-    <Compile Include="Models\Identity.cs" />
-    <Compile Include="Models\Service.cs" />
-    <Compile Include="Models\sysdiagram.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Context\EnterpriseDB.cs" />
+    <Compile Include="Models\Model\AboutUs.cs" />
+    <Compile Include="Models\Model\Admin.cs" />
+    <Compile Include="Models\Model\Blog.cs" />
+    <Compile Include="Models\Model\Category.cs" />
+    <Compile Include="Models\Model\Contact.cs" />
+    <Compile Include="Models\Model\Identity.cs" />
+    <Compile Include="Models\Model\Service.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
