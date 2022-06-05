@@ -2647,16 +2647,6 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
-    <Content Include="Models\EnterpriseDB.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EnterpriseDB.edmx</DependentUpon>
-      <LastGenOutput>EnterpriseDB.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\EnterpriseDB.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EnterpriseDB.edmx</DependentUpon>
-      <LastGenOutput>EnterpriseDB.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -3188,13 +3178,6 @@
     <Content Include="Content\AdminLayout\LICENSE.md" />
     <Content Include="Content\AdminLayout\package.json" />
     <Content Include="Content\AdminLayout\README.md" />
-    <EntityDeploy Include="Models\EnterpriseDB.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>EnterpriseDB.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\EnterpriseDB.edmx.diagram">
-      <DependentUpon>EnterpriseDB.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.0.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />
@@ -3292,45 +3275,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AboutU.cs">
-      <DependentUpon>EnterpriseDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Admin.cs">
-      <DependentUpon>EnterpriseDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Blog.cs">
-      <DependentUpon>EnterpriseDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Category.cs">
-      <DependentUpon>EnterpriseDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Contact.cs">
-      <DependentUpon>EnterpriseDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EnterpriseDB.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EnterpriseDB.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EnterpriseDB.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EnterpriseDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EnterpriseDB.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EnterpriseDB.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Identity.cs">
-      <DependentUpon>EnterpriseDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Service.cs">
-      <DependentUpon>EnterpriseDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>EnterpriseDB.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Models\AboutU.cs" />
+    <Compile Include="Models\Admin.cs" />
+    <Compile Include="Models\Blog.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\EnterpriseDB.cs" />
+    <Compile Include="Models\Identity.cs" />
+    <Compile Include="Models\Service.cs" />
+    <Compile Include="Models\sysdiagram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
