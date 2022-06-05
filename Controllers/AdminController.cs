@@ -9,12 +9,12 @@ namespace EnterpriseWebApp.Controllers
 {
     public class AdminController : Controller
     {
-        EnterpriseDBEntities db = new EnterpriseDBEntities();
+        //EnterpriseDB db = new EnterpriseDB();
         // GET: Admin
         public ActionResult Index()
         {
-            var query = db.Categories.ToList();
-            return View(query);
+            //var query = db.Categories.ToList();
+            return View(/*query*/);
         }
     }
 }
