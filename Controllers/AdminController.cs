@@ -1,10 +1,6 @@
-﻿using EnterpriseWebApp.Models;
-using EnterpriseWebApp.Models.Context;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
+using EnterpriseWebApp.Models.Context;
 
 namespace EnterpriseWebApp.Controllers
 {
@@ -13,8 +9,8 @@ namespace EnterpriseWebApp.Controllers
         EnterpriseDB db = new EnterpriseDB();
         public ActionResult Index()
         {
-            //var query = db.Categories.ToList();
-            return View(/*query*/);
+            var query = db.Categories.ToList();
+            return View(query);
         }
     }
 }
