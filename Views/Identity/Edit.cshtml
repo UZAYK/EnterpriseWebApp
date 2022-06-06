@@ -7,7 +7,6 @@
 <script type="text/javascript">
     CKEDITOR.replace('editor')
 </script>
-<h2>Edit</h2>
 
 @using (Html.BeginForm("Edit", "Identity", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
@@ -43,13 +42,6 @@
             </div>
         </div>
 
-        @*<div class="form-group">
-                @Html.Label("Old Logo")
-                <div class="col-md-10">
-                    <input src="@Model.LogoURL" width="300" height="300">
-                </div>
-            </div>*@
-
         <div class="form-group">
             @Html.LabelFor(model => model.LogoURL, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -68,7 +60,7 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Save" class="btn btn-default float-right" />
             </div>
         </div>
     </div>
