@@ -1,7 +1,8 @@
-﻿using EnterpriseWebApp.Models.Context;
-using EnterpriseWebApp.Models.Model;
-using System.Linq;
+﻿using System.Linq;
 using System.Web.Mvc;
+
+using EnterpriseWebApp.Models.Model;
+using EnterpriseWebApp.Models.Context;
 
 namespace EnterpriseWebApp.Controllers
 {
