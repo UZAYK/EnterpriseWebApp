@@ -15,6 +15,8 @@
         <thead class="thead-light">
             <tr>
                 <th>
+                    @Html.DisplayNameFor(model => model.LogoURL)
+                    |
                     @Html.DisplayNameFor(model => model.Title)
                 </th>
                 <th>
@@ -24,12 +26,11 @@
                     @Html.DisplayNameFor(model => model.Description)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.LogoURL)
-                </th>
-                <th>
                     @Html.DisplayNameFor(model => model.Unvan)
                 </th>
-                <th></th>
+                <th>
+                    Transactions
+                </th>
             </tr>
 
         </thead>
@@ -38,18 +39,33 @@
             @foreach (var item in Model)
             {
                 <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Title)
-                    </td>
+                    <th scope="row">
+                        <div class="media align-items-center">
+                            <a href="#" class="avatar rounded-circle mr-3">
+                                <img src="@item.LogoURL" />
+                            </a>
+                            <div class="media-body">
+                                <span class="name mb-0 text-sm">@Html.DisplayFor(modelItem => item.Title)</span>
+                            </div>
+                        </div>
+                    </th>
+
                     <td>
                         @Html.DisplayFor(modelItem => item.Keywords)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Description)
                     </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.LogoURL)
-                    </td>
+                    <!--<td>-->
+                    @*<div class="avatar-group">
+                            <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="@item.Title">
+                                <img src="@item.LogoURL" />
+                            </a>
+                        </div>*@
+                    <!--<a href="#" class="avatar rounded-circle mr-3" data-toggle="tooltip" data-original-title="@item.Title">
+                            <img src="@item.LogoURL" />
+                        </a>
+                    </td>-->
                     <td>
                         @Html.DisplayFor(modelItem => item.Unvan)
                     </td>
