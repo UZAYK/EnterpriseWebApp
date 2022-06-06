@@ -29,6 +29,7 @@ namespace EnterpriseWebApp.Controllers
 
         // POST: Identity/Edit/5
         [HttpPost]
+        [ValidateInput(false)]
         public ActionResult Edit(int id, Identity model, HttpPostedFileBase LogoURL)
         {
             if (ModelState.IsValid)
