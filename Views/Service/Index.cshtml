@@ -3,7 +3,7 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-
+<a class="btn btn-outline-primary mx-1 my-2 float-right" href="/Service/Create/">Create</a>
 <div class="table-responsive">
     <table class="table align-items-center table-flush">
         <thead class="thead-light">
@@ -38,9 +38,7 @@
 
                     <td>
                         @Html.DisplayFor(modelItem => item.ServiceId)
-                    </td>
-
-                    <td>
+                        |
                         @Html.DisplayFor(modelItem => item.Title)
                     </td>
 
@@ -60,7 +58,8 @@
                     </th>
 
                     <td>
-                        @Html.ActionLink("Edit", "Services", new { id = item.ServiceId })
+                        @Html.ActionLink("Edit", "Services", new { id = item.ServiceId }) |
+                        @Html.ActionLink("Delete", "Services", new { id = item.ServiceId }) 
                     </td>
 
                 </tr>
